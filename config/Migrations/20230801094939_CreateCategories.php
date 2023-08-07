@@ -13,7 +13,19 @@ class CreateCategories extends AbstractMigration
      */
     public function change()
     {
-        $this->table('categories')
+        $this->table('categories', [
+            'comment' => 'Categories',
+            'collation' => 'utf8mb4_bin',
+            'id' => false,
+            'primary_key' => ['id'],
+        ])
+            ->addColumn('id', 'biginteger', [
+                'autoIncrement' => true,
+                'comment' => 'PRIMARY KEY',
+                'default' => null,
+                'limit' => 20,
+                'null' => false,
+            ])
             ->addColumn('cate_name', 'string', [
                 'default' => null,
                 'limit' => 255,

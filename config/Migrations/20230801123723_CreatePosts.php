@@ -12,7 +12,19 @@ class CreatePosts extends AbstractMigration
      */
     public function change()
     {
-        $this->table('posts')
+        $this->table('posts',[
+            'comment' => 'Posts',
+            'collation' => 'utf8mb4_bin',
+            'id' => false,
+            'primary_key' => ['id'],
+        ])
+        ->addColumn('id', 'biginteger', [
+            'autoIncrement' => true,
+            'comment' => 'PRIMARY KEY',
+            'default' => null,
+            'limit' => 20,
+            'null' => false,
+        ])
         ->addColumn('post_title', 'string', [
             'default' => null,
             'limit' => 255,
