@@ -1,0 +1,45 @@
+{
+    "dependencies": {
+        "@babel/polyfill": "^7.11.5",
+        "@fortawesome/fontawesome-svg-core": "^6.4.2",
+        "@fortawesome/free-brands-svg-icons": "^6.4.2",
+        "@fortawesome/free-regular-svg-icons": "^6.4.2",
+        "@fortawesome/free-solid-svg-icons": "^6.4.2",
+        "@fortawesome/vue-fontawesome": "^2.0.10",
+        "axios": "^0.19.2",
+        "bootstrap": "^5.3.1",
+        "bootstrap-vue": "^2.23.1",
+        "font-awesome": "^4.7.0",
+        "vue": "^2.6.12",
+        "vue-router": "^3.4.3"
+    },
+    "name": "ureru-trainning",
+    "description": "[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app) [![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)",
+    "version": "1.0.0",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack --mode development --watch",
+        "build": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "@babel/preset-env": "^7.11.5",
+        "@fortawesome/fontawesome-free": "^6.4.2",
+        "babel-loader": "^8.1.0",
+        "css-loader": "^4.3.0",
+        "file-loader": "^6.2.0",
+        "style-loader": "^1.2.1",
+        "url-loader": "^4.1.1",
+        "vue-loader": "^15.9.3",
+        "vue-template-compiler": "^2.6.12",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    }
+}
